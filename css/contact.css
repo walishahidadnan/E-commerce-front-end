@@ -1,0 +1,146 @@
+body{
+    box-sizing: border-box;
+    background-color: #F0F6F8;
+}
+.navbar{
+    background-color: #ffffff;
+}
+.navbar-collapse{
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar a{
+    /* font-size: 1.4rem; */
+    border-bottom: 4px solid transparent;;
+
+
+}
+.navbar a.active{
+    border-bottom: 4px solid #ce2840;;
+}
+nav .nav-link{
+    /* border-bottom: 2px solid red; */
+    margin: 0px 12px;
+    padding: 0px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    /* color: white !important; */
+}
+header hr{
+    width: 140px;
+    background-color: #e41e00;
+    margin: 0px;
+    margin-bottom: 30px;
+    padding: 2px;
+}
+header p{
+    font-size: 22px;
+    color: #494949;
+    word-spacing: 2px;
+    letter-spacing: 0.4px;
+    line-height: 2.2rem;
+    width: 68%;
+}
+form{
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form input{
+    width: 49%;
+    padding: 15px;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+}
+form textarea{
+    width: 100%;
+    height: 300px;
+    outline: none;
+    border: 1px solid rgb(184, 184, 184);
+    padding: 30px;
+}
+form .f-btn{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #FF7B6A;
+    background-color: #FF7B6A;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: all 0.4s ease-in;
+}
+form .f-btn:hover{
+    border: 1px solid #FF7B6A;
+    background-color: transparent;
+    color: #FF7B6A;
+    transition: all 0.4s ease-in;
+}
+.ques{
+    background-color: #FF7B6A;
+    color: white;
+}
+.ques p{
+    font-size: 15px;
+    line-height: 2.2rem;
+}
+.ques span{
+    width: 90%;
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+.footer{
+    background-color: #222831;
+    box-sizing: border-box;
+}
+
+.footer-contact p{
+ color: #c7c6c6;
+}
+.footer-contact button{
+    background-color: #f66e5f;
+
+}
+
+.footer-links, .footer-social-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-links ul {
+    list-style-type: none;
+}
+.footer-links ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-social-links .links a{
+    border: 1px solid #f66e5f;
+    border-radius: 50%;
+    color: #f66e5f;
+}
+@media (max-width: 786px) and (min-width: 200px) {
+    header p{
+        font-size: 22px;
+        color: #494949;
+        word-spacing: 2px;
+        letter-spacing: 0.4px;
+        line-height: 2.2rem;
+        width: 100%;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    form input{
+        width: 100% !important;
+    }
+}
